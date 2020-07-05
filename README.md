@@ -1,4 +1,4 @@
-# Prediction of Life Expectancy
+# Life Expectancy Prediction
 
 ## Introduction
 
@@ -34,4 +34,6 @@ Furthermore, the model is biased towards the life expectancy values that it was 
 
 Exploratory data analysis showed that developed countries typically had higher life expectancies than developing countries. Countires in Europe, Asia, and North America also typically have higher life expectancies. Moreover, life expectancy had large, positive correlations with schooling and income composition of resources. HIV/AIDS and thinness had large, negative correlations with life expectancy. 
 
-All of the machine learning models performed very well on the train and test datasets. The best model was Gradient Boosted Tree with an RMSE of 2.0291 years. Important features for the GBT model were the income composition of resources and HIV/AIDS prevalance. The model performed best for North America and South Asia, and it had difficulty predicting regions such as Sub-Sahara Africa, the Middle East and North Africa, and Europe and Central Asia. The regions with larger RMSE values have countries with a broad range of life expectancy, which could have contributed to the miscalculations by the model. Additionally, the model did a very good job of predicting large values of thinness, population size, and BMI.
+All of the machine learning models performed very well on the train and test datasets. The best model was Gradient Boosted Tree with an RMSE of 2.0291 years. Global model interpretability analysis showed important features for the GBT model were the income composition of resources and HIV/AIDS prevalance. The model performed best for North America and South Asia, and it had difficulty predicting regions such as Sub-Sahara Africa, the Middle East and North Africa, and Europe and Central Asia. The regions with larger RMSE values have countries with a broad range of life expectancy, which could have contributed to the miscalculations by the model. Additionally, the model did a very good job of predicting large values of thinness, population size, and BMI.
+
+The local model interpretability for the United States showed almost all predictor values increased life expectancy in the United States. Predictors that decreased life expectancy in the United States were very small. Therefore, it seems reasonable to believe that the life expectancy in the United States is almost at a maximum level based off of the predictors used in this dataset.
